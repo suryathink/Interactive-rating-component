@@ -79,6 +79,15 @@
   const submitBtn = document.getElementById("submit");
 
   submitBtn.addEventListener("click", function () {
+    let a =document.getElementById("rating").textContent;
+    if (!a){
+      alert ("Please Select the Rating")
+    }
+
+    return;
+
+
+
     const mainContainer = document.getElementById("container");
     const thankyoucontainer = document.getElementById("thankyou-container");
     mainContainer.style.display = "none";
